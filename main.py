@@ -15,7 +15,7 @@ load_dotenv()
 wcs_cluster_url = os.getenv("WEAVIATE_URL")
 wcs_api_key = os.getenv("WEAVIATE_API_KEY")
 
-pdf_loader = PyPDFLoader("tip.pdf")
+pdf_loader = PyPDFLoader("your document.pdf")
 docs = pdf_loader.load()
 
 text_splitter = RecursiveCharacterTextSplitter(
